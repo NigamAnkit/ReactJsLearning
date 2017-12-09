@@ -10,19 +10,29 @@ var config = {
       filename: 'bundle.js',
       publicPath: '/app/'
     },
+    // module: {
+    //     loaders: [
+    //         {
+    //             test: /\.js?$/,
+    //             include: SRC_DIR,
+    //             loader: "babel-loader",
+    //             query: {
+    //                 presets: ["react","env"]
+    //             }
+    //         }
+    //     ]
+    // },
+    //watch: true
+
     module: {
-        loaders: [
+        rules: [
             {
-                test: /\.js?/,
-                include: SRC_DIR,
-                loader: "babel-loader",
-                query: {
-                    presets: ["react","env"]
-                }
+                test: /\.js?$/,
+                exclude: /node_modules/,
+                loader: 'babel-loader'
             }
         ]
-    },
-    //watch: true
+    }
 
   };
 

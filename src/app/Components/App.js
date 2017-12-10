@@ -1,6 +1,7 @@
 import React from 'react'
 import {render} from 'react-dom'
 import  Header from './Header'
+import StatelessComponent from './StatelessComponent'
 
 class App extends React.Component{
 
@@ -15,6 +16,7 @@ class App extends React.Component{
             <div>
                 <h1>This is my first react compoment sda</h1>
                 <Header name = {user.name} age = {user.age} />
+                <StatelessComponent/>
             </div>
         )
     }

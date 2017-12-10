@@ -9,5 +9,5 @@ console.log('this is ankit nigam git test')
 let app = document.getElementById("app")
 render(<App/>, app);
 
-let header = document.getElementById("header")
-render(<Header/>,header)
+// let header = document.getElementById("header")
+// render(<Header/>,header)
